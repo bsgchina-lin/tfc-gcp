@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = var.google_creds
+  credentials = var.GOOGLE_CREDENTIALS
   project = "xxnet-2020"
   region  = "us-central1"
   zone    = "us-central1-c"
