@@ -1,8 +1,13 @@
 provider "google" {
+  credentials = var.google_creds
   project = "xxnet-2020"
   region  = "us-central1"
   zone    = "us-central1-c"
 }
+
+variables “google_creds” { type = string }
+
+
 
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance"
