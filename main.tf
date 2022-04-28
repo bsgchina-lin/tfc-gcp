@@ -5,7 +5,7 @@ provider "google" {
   zone    = "us-central1-c"
 }
 
-variables "google_creds" { type = string }
+variable "google_creds" { type = string }
 
 
 
