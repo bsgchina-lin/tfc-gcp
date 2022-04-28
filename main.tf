@@ -1,11 +1,13 @@
 provider "google" {
   credentials = var.GOOGLE_CREDENTIALS
-  project = "xxnet-2020"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  project     = "xxnet-2020"
+  region      = "us-central1"
+  zone        = "us-central1-c"
 }
 
-#variable "google_creds" { type = string }
+variable "GOOGLE_CREDENTIALS" {
+  default = "tfc-gcp-2022"
+}
 
 
 
